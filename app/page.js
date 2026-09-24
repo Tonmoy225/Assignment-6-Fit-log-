@@ -40,7 +40,16 @@ export default function Home() {
         </div>
       </section>
 
-     
+      {/* Library */}
+      <section id="library" className="scroll-mt-6 py-16">
+        <div className="mb-8">
+          <div>
+            <h2 className="font-display text-3xl font-semibold uppercase">The Library</h2>
+            <p className="mt-2 text-sm text-muted">
+              Twelve lifts covering every major muscle group.
+            </p>
+          </div>
+        </div>
 
         {loading && <Spinner />}
 
