@@ -54,7 +54,18 @@ export default function MyPlan() {
         <Metric label="Calories" value={totalCalories} border />
       </div>
 
-      
+      {/* tabs + sort */}
+      <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
+        <div className="flex gap-1 rounded-xl border border-line bg-card p-1">
+          <button onClick={() => setTab("plan")} className={tabClass("plan")}>
+            Today&apos;s Plan
+          </button>
+          <button onClick={() => setTab("saved")} className={tabClass("saved")}>
+            Saved
+          </button>
+        </div>
+        <SortDropdown value={sortBy} onChange={setSortBy} />
+      </div>
 
       {/* list */}
       <div className="mt-6">
